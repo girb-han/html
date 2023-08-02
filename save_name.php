@@ -19,13 +19,5 @@ $sql = INSERT INTO dog_health(DATE, TIME ,$wather) VALUES(CURRENT_DATE, CURRENT_
 $result = $conn->query($sql);
 $conn = null;
 
-function goBack() {
-    // 이전 페이지로 리다이렉트
-    header("Location: " . $_SERVER['HTTP_REFERER']);
-    exit;
-}
-
-// 함수 호출로 이전 페이지로 이동
-goBack();
 	
 ?>
