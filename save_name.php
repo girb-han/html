@@ -15,5 +15,7 @@ if ($conn->connect_error) {
     die("MariaDB 연결 실패: " . $conn->connect_error);
 }
    
-$sql = INSERT INTO dog_health(DATE, TIME ,wather) VALUES(CURRENT_DATE, CURRENT_TIME, water);
+$sql = INSERT INTO dog_health(DATE, TIME ,$wather) VALUES(CURRENT_DATE, CURRENT_TIME, water);
 $result = $conn->query($sql);
+$conn = null;
+?>
