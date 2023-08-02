@@ -2,7 +2,7 @@
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $water = $_POST["water"];
 	
-$hostname = "svc.sel4.cloudtype.app:30493"; // 호스트명 (기본값은 localhost)
+$hostname = "127.0.0.1:3306"; // 호스트명 (기본값은 localhost)
 $username = "root"; // 사용자 이름
 $password = "1234"; // 비밀번호
 $database = "dog"; // 데이터베이스 이름
